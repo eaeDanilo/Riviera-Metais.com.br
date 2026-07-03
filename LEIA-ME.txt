@@ -1,0 +1,56 @@
+RIVIERA METAIS — COMO USAR ESTE SITE
+=====================================
+
+1. COMO ALTERAR TEXTOS, VALORES E CONTATO
+------------------------------------------
+Abra o arquivo:  js/content.js
+
+Todo o conteúdo do site está lá, organizado por seção,
+com comentários explicando cada parte:
+  - empresa   -> nome, WhatsApp, e-mail, matriz, filiais, horário
+  - hero      -> título e frases do topo
+  - metais    -> cartões Ouro Fino 24K e Prata Pura 999
+  - metal     -> textos "O que significa teor 999"
+  - pureza    -> os 6 cartões de garantia (por que a Riviera)
+  - entrega   -> entrega em mãos SP capital + envio Brasil
+  - setores   -> segmentos atendidos
+  - processo  -> os 4 passos de COMPRA (cliente comprando)
+  - vender    -> compra de metais: percentuais, prazos e a
+                 TABELA DE SIMULAÇÃO (edite valores aqui)
+  - contato   -> textos da seção de contato
+  - rodape    -> textos do rodapé
+
+Mude o texto entre aspas, salve, pronto.
+
+IMPORTANTE: o contato atual é FICTÍCIO.
+Antes de publicar, troque em "empresa":
+  whatsapp:     número exibido no site
+  whatsappLink: mesmo número só com dígitos, com 55 na frente
+                ex: "5511987654321"
+  email:        e-mail real
+
+
+2. COMO VER O SITE NO SEU COMPUTADOR
+------------------------------------------
+Dê dois cliques no arquivo index.html — abre no navegador.
+
+
+3. COMO PUBLICAR NO HOSTGATOR
+------------------------------------------
+Opção A — cPanel (mais fácil):
+  1. Entre no cPanel do HostGator
+  2. Abra "Gerenciador de Arquivos"
+  3. Entre na pasta public_html
+  4. Envie TODOS os arquivos desta pasta:
+       index.html
+       LEIA-ME.txt   (opcional, pode omitir)
+       css/  (pasta inteira)
+       js/   (pasta inteira)
+  5. Acesse seu domínio — site no ar.
+
+Opção B — FTP (FileZilla):
+  1. Conecte com os dados de FTP do HostGator
+  2. Envie os mesmos arquivos para public_html
+
+Para atualizar o site depois: edite js/content.js no seu
+computador e reenvie SÓ esse arquivo para public_html/js/

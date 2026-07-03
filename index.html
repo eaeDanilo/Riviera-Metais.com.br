@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Riviera Metais — Ouro e Prata com Procedência</title>
+  <meta name="description" content="Compra e venda de ouro fino 24K 999,9 e prata pura 999 com laudo técnico, procedência e entrega em mãos em São Paulo capital. Envio para todo o Brasil.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Barra de progresso do scroll -->
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Textura de grão sobre o site inteiro -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ================= NAV ================= -->
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo" aria-label="Riviera Metais — início">
+        <span class="logo-riviera">
+          <span class="logo-frame">
+            <span class="logo-word"><i>R</i>ivier<i>A</i></span>
+          </span>
+          <span class="logo-metais">Metais</span>
+        </span>
+      </a>
+      <nav class="nav-links" id="navLinks" aria-label="Navegação principal"></nav>
+      <a href="#contato" class="nav-cta" data-c="hero.botaoPrincipal">Solicitar cotação</a>
+      <button class="nav-burger" id="navBurger" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="hero-bar hero-bar-1" aria-hidden="true"></div>
+    <div class="hero-bar hero-bar-2" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <p class="hero-selo reveal" data-c="hero.selo"></p>
+      <h1 class="hero-title reveal" data-c="hero.titulo"></h1>
+      <p class="hero-sub reveal" data-c="hero.subtitulo"></p>
+      <div class="hero-actions reveal">
+        <a href="#contato" class="btn btn-solid" data-c="hero.botaoPrincipal"></a>
+        <a href="#metal" class="btn btn-ghost" data-c="hero.botaoSecundario"></a>
+      </div>
+    </div>
+    <div class="hero-fineness reveal" aria-hidden="true">
+      <span class="fineness-number">999</span>
+      <span class="fineness-label">milésimos de pureza</span>
+    </div>
+    <a href="#metais" class="hero-scroll-hint" aria-label="Rolar para baixo">
+      <span class="scroll-line"></span>
+    </a>
+  </section>
+
+  <!-- ================= NOSSOS METAIS ================= -->
+  <section class="section" id="metais">
+    <div class="section-inner">
+      <p class="etiqueta reveal" data-c="metais.etiqueta"></p>
+      <h2 class="section-title reveal" data-c="metais.titulo"></h2>
+      <div class="metais-grid" id="metaisGrid"></div>
+    </div>
+  </section>
+
+  <!-- ================= O METAL ================= -->
+  <section class="section" id="metal">
+    <div class="section-inner split">
+      <div class="split-text">
+        <p class="etiqueta reveal" data-c="metal.etiqueta"></p>
+        <h2 class="section-title reveal" data-c="metal.titulo"></h2>
+        <div class="paragrafos" id="metalParagrafos"></div>
+      </div>
+      <div class="split-stats" id="metalDestaques"></div>
+    </div>
+  </section>
+
+  <!-- ================= PUREZA ================= -->
+  <section class="section section-alt" id="pureza">
+    <div class="section-inner">
+      <p class="etiqueta reveal" data-c="pureza.etiqueta"></p>
+      <h2 class="section-title reveal" data-c="pureza.titulo"></h2>
+      <p class="section-sub reveal" data-c="pureza.subtitulo"></p>
+      <div class="cards" id="purezaCards"></div>
+    </div>
+  </section>
+
+  <!-- ================= ONDE ENTREGAMOS ================= -->
+  <section class="section" id="entrega">
+    <div class="section-inner">
+      <p class="etiqueta reveal" data-c="entrega.etiqueta"></p>
+      <h2 class="section-title reveal" data-c="entrega.titulo"></h2>
+      <div class="entrega-grid" id="entregaGrid"></div>
+    </div>
+  </section>
+
+  <!-- ================= SETORES ================= -->
+  <section class="section section-alt" id="setores">
+    <div class="section-inner">
+      <p class="etiqueta reveal" data-c="setores.etiqueta"></p>
+      <h2 class="section-title reveal" data-c="setores.titulo"></h2>
+      <div class="setores-grid" id="setoresGrid"></div>
+    </div>
+  </section>
+
+  <!-- ================= PROCESSO (COMPRAR) ================= -->
+  <section class="section" id="processo">
+    <div class="section-inner">
+      <p class="etiqueta reveal" data-c="processo.etiqueta"></p>
+      <h2 class="section-title reveal" data-c="processo.titulo"></h2>
+      <ol class="passos" id="processoPassos"></ol>
+
+      <div class="cta-faixa reveal">
+        <div class="cta-faixa-texto">
+          <h3 data-c="processo.chamada"></h3>
+          <p data-c="processo.chamadaTexto"></p>
+        </div>
+        <div class="cta-faixa-acao">
+          <a class="btn btn-solid js-whats" href="#" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.5 14.1c-.2.7-1.3 1.3-1.9 1.4-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6a13 13 0 0 1-5-4.4c-.5-.7-1-1.6-1-2.5 0-.9.5-1.4.7-1.6.2-.2.4-.3.6-.3h.5c.2 0 .4 0 .5.4l.8 1.9c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.7 1.2 1.6 2 1.1 1 2 1.3 2.3 1.4.3.1.5.1.6-.1l.7-.9c.2-.2.3-.2.6-.1l1.8.9c.3.1.4.2.5.3 0 .1 0 .5-.2 1.2Z"/></svg>
+            <span data-c="processo.botao"></span>
+          </a>
+          <p class="cta-faixa-numero" data-c="empresa.whatsapp"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= VENDER SEU METAL ================= -->
+  <section class="section section-alt" id="vender">
+    <div class="section-inner">
+      <p class="etiqueta reveal" data-c="vender.etiqueta"></p>
+      <h2 class="section-title reveal" data-c="vender.titulo"></h2>
+      <p class="section-sub reveal" data-c="vender.texto"></p>
+
+      <div class="vender-infos" id="venderInfos"></div>
+
+      <ol class="passos passos-vender" id="venderPassos"></ol>
+
+      <div class="simulacao reveal">
+        <div class="simulacao-cabecalho">
+          <h3 data-c="vender.simulacao.titulo"></h3>
+          <p data-c="vender.simulacao.subtitulo"></p>
+        </div>
+        <div class="simulacao-scroll">
+          <table class="simulacao-tabela">
+            <thead>
+              <tr>
+                <th>Quilates</th>
+                <th>Teor aprox.</th>
+                <th>Metal puro</th>
+                <th>Cálculo</th>
+                <th>Percentual</th>
+                <th>Valor líquido*</th>
+              </tr>
+            </thead>
+            <tbody id="simulacaoTabela"></tbody>
+          </table>
+        </div>
+        <div class="simulacao-avisos" id="simulacaoAvisos"></div>
+      </div>
+
+      <div class="cta-faixa reveal">
+        <div class="cta-faixa-texto">
+          <h3 data-c="vender.chamada"></h3>
+          <p data-c="vender.chamadaTexto"></p>
+        </div>
+        <div class="cta-faixa-acao">
+          <a class="btn btn-solid js-whats" href="#" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.5 14.1c-.2.7-1.3 1.3-1.9 1.4-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6a13 13 0 0 1-5-4.4c-.5-.7-1-1.6-1-2.5 0-.9.5-1.4.7-1.6.2-.2.4-.3.6-.3h.5c.2 0 .4 0 .5.4l.8 1.9c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.7 1.2 1.6 2 1.1 1 2 1.3 2.3 1.4.3.1.5.1.6-.1l.7-.9c.2-.2.3-.2.6-.1l1.8.9c.3.1.4.2.5.3 0 .1 0 .5-.2 1.2Z"/></svg>
+            <span data-c="vender.botao"></span>
+          </a>
+          <p class="cta-faixa-numero" data-c="empresa.whatsapp"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTATO ================= -->
+  <section class="section contato" id="contato">
+    <div class="contato-glow" aria-hidden="true"></div>
+    <div class="section-inner contato-inner">
+      <p class="etiqueta reveal" data-c="contato.etiqueta"></p>
+      <h2 class="contato-title reveal" data-c="contato.titulo"></h2>
+      <p class="section-sub reveal" data-c="contato.texto"></p>
+      <div class="contato-dados reveal">
+        <a class="btn btn-solid btn-whats" id="whatsBtn" href="#" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.5 14.1c-.2.7-1.3 1.3-1.9 1.4-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6a13 13 0 0 1-5-4.4c-.5-.7-1-1.6-1-2.5 0-.9.5-1.4.7-1.6.2-.2.4-.3.6-.3h.5c.2 0 .4 0 .5.4l.8 1.9c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.7 1.2 1.6 2 1.1 1 2 1.3 2.3 1.4.3.1.5.1.6-.1l.7-.9c.2-.2.3-.2.6-.1l1.8.9c.3.1.4.2.5.3 0 .1 0 .5-.2 1.2Z"/></svg>
+          <span data-c="contato.botaoWhats"></span>
+        </a>
+        <div class="contato-lista">
+          <p><span class="contato-rotulo">WhatsApp</span> <span data-c="empresa.whatsapp"></span></p>
+          <p><span class="contato-rotulo">E-mail</span> <span data-c="empresa.email"></span></p>
+          <p><span class="contato-rotulo">Atendimento</span> <span data-c="empresa.horario"></span></p>
+        </div>
+        <div class="contato-lista">
+          <p><span class="contato-rotulo">Matriz</span> <span data-c="empresa.matriz"></span></p>
+          <p><span class="contato-rotulo">Filiais</span> <span data-c="empresa.filiais"></span></p>
+          <p><span class="contato-rotulo">Entrega</span> <span data-c="empresa.regiao"></span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= RODAPÉ ================= -->
+  <footer class="rodape">
+    <div class="rodape-inner">
+      <div>
+        <span class="logo-riviera logo-riviera-lg" aria-label="Riviera Metais">
+          <span class="logo-frame">
+            <span class="logo-word"><i>R</i>ivier<i>A</i></span>
+          </span>
+          <span class="logo-metais">Metais</span>
+        </span>
+        <p class="rodape-texto" data-c="rodape.texto"></p>
+      </div>
+      <p class="rodape-aviso" data-c="rodape.avisoLegal"></p>
+      <p class="rodape-copy">© <span id="ano"></span> <span data-c="empresa.nome"></span>. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/content.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
