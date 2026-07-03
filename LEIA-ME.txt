@@ -37,20 +37,24 @@ Dê dois cliques no arquivo index.html — abre no navegador.
 
 3. COMO PUBLICAR NO HOSTGATOR
 ------------------------------------------
+IMPORTANTE: o domínio rivierametais.com.br serve a pasta
+/rivierametais.com.br (document root do domínio), e NÃO a
+public_html. Sempre envie os arquivos para ela.
+
 Opção A — cPanel (mais fácil):
   1. Entre no cPanel do HostGator
   2. Abra "Gerenciador de Arquivos"
-  3. Entre na pasta public_html
-  4. Envie TODOS os arquivos desta pasta:
+  3. Entre na pasta rivierametais.com.br (na raiz da conta)
+  4. Envie os arquivos:
        index.html
-       LEIA-ME.txt   (opcional, pode omitir)
        css/  (pasta inteira)
        js/   (pasta inteira)
-  5. Acesse seu domínio — site no ar.
+  5. Acesse rivierametais.com.br — site atualizado.
 
 Opção B — FTP (FileZilla):
   1. Conecte com os dados de FTP do HostGator
-  2. Envie os mesmos arquivos para public_html
+  2. Envie os mesmos arquivos para /rivierametais.com.br
 
-Para atualizar o site depois: edite js/content.js no seu
-computador e reenvie SÓ esse arquivo para public_html/js/
+Para atualizar só texto depois: edite js/content.js no seu
+computador e reenvie SÓ esse arquivo para
+rivierametais.com.br/js/ (sobrescrever).
