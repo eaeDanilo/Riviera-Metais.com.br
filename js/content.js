@@ -249,12 +249,12 @@ const CONTENT = {
        EDITE valores e pagador do dia aqui. */
     simulacao: {
       titulo: "Exemplo de simulação — Ouro",
-      subtitulo: "Você envia 100 g de material (peso bruto). Pagador do dia: R$ 645,00/g.",
+      subtitulo: "Você envia 100 g de material (peso bruto). Pagador do dia: R$ 405,00/g.",
       linhas: [
-        { quilate: "Ouro 10K", teor: "40%", puro: "40 g",  calculo: "40 g × R$ 645,00", percentual: "3%", liquido: "R$ 25.026,00" },
-        { quilate: "Ouro 14K", teor: "50%", puro: "50 g",  calculo: "50 g × R$ 645,00", percentual: "3%", liquido: "R$ 31.282,50" },
-        { quilate: "Ouro 16K", teor: "65%", puro: "65 g",  calculo: "65 g × R$ 645,00", percentual: "3%", liquido: "R$ 40.666,25" },
-        { quilate: "Ouro 18K", teor: "73%", puro: "73 g",  calculo: "73 g × R$ 645,00", percentual: "3%", liquido: "R$ 45.672,45" },
+        { quilate: "Ouro 10K", teor: "40%", puro: "40 g",  calculo: "40 g × R$ 405,00", percentual: "3%", liquido: "R$ 15.714,00" },
+        { quilate: "Ouro 14K", teor: "50%", puro: "50 g",  calculo: "50 g × R$ 405,00", percentual: "3%", liquido: "R$ 19.642,50" },
+        { quilate: "Ouro 16K", teor: "65%", puro: "65 g",  calculo: "65 g × R$ 405,00", percentual: "3%", liquido: "R$ 25.535,25" },
+        { quilate: "Ouro 18K", teor: "73%", puro: "73 g",  calculo: "73 g × R$ 405,00", percentual: "3%", liquido: "R$ 28.678,05" },
         { quilate: "Prata 999", teor: "99,9%", puro: "—", calculo: "Consultar no dia", percentual: "12%", liquido: "Consultar no dia" },
       ],
       avisos: [
